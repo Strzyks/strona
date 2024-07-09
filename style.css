@@ -1,0 +1,48 @@
+@keyframes color-change {
+    0%{
+        color:rgb(19, 19, 159);
+    }
+    100%{
+        color:rgb(19, 19, 159);
+}
+}
+@keyframes color-change2 {
+    0%{
+        color:rgb(19, 19, 159)
+    }
+    100%{
+        color:#292525
+}
+}
+
+
+body {
+    font-family: ArcadeClassic, Minecrafter; /* Rodzina czcionek */
+    font-size: 30px; /* Rozmiar głównej czcionki w <p></p> tag  */
+    background-color: #000000; /* Kolor tła strony internetowej */
+    color: #ffffff; /* Kolor tła strony internetowej*/ 
+    border:indigo;
+}
+h1 {
+    color: #292525; /* Kolor nagłówka */
+    font-size: 50px; /* Rozmiar czcionki nagłówka */
+    font-family: Georgia, serif; /* Rodzina czcionek używana w nagłówku */
+    animation: color-change2 2s infinite;
+    transition: 2s;
+}
+h2 {
+    color:#292525;
+    font-size: 40px;
+    transition: 2s;
+}
+h1:hover {
+    animation: color-change 1s infinite;
+    font-size: 60px;
+    transition: 2s;
+}
+h2:hover {
+    animation: color-change 3s infinite;
+    color:#292525;
+    font-size: 50px;
+    transition: 2s;
+}
